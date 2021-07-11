@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        div{
+
+        }
+        .container{
+            padding-top:150px;
+            display: grid;
+            grid-template-rows: 100px 25px 25px 25px;
+            grid-template-columns: 200px,200px;
+            grid-template-areas:
+                "logo logo"
+                "search search"
+                "button1 button2"
+                "privacy1 privacy2";
+            grid-column-gap: 10px;
+            grid-row-gap:20px;
+            justify-items:center;
+        }
+        .logo{
+            grid-area: logo;
+        }
+        .searchbar{
+            grid-area: search;
+            border-radius: 20px;
+        }
+        .searchbutton{
+            grid-area: button1;
+            justify-self: end;
+            transform: translate(50px,0px);
+            
+        
+        }
+        .luckybutton{
+            grid-area: button2;
+            justify-self: start;
+            transform: translate(50px,0px);
+        }
+        .privacyshield{
+            grid-area: privacy1;
+            justify-self: right;
+        }
+        .privacytext{
+            grid-area: privacy2;
+            justify-self: left;
+            padding-top:15px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .button{
+            padding:50px,50px,50px,50px;
+            border-radius: 10%;
+            border-width: 0px;
+            margin:10px,10px,10px,10px;
+        }
+        .button:hover{
+            border-color:rgb(192, 190, 190);
+            border-width:1px;  
+        }
+        .search:hover{
+            border-color:rgb(209, 207, 207);
+            border-width:1px; 
+        }
+    </style>
+    <head>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img src="materials/google-logo.png" alt="Google Logo">
+            </div>
+            <div class ="searchbar">
+                <input class="search" placeholder="Search">
+            </div>
+            <div class="searchbutton">
+                <button class="button">Google Search</button>
+            </div>
+            <div class="luckybutton">
+                <button class="button">I'm Feeling Lucky</button>
+            </div>
+            <div class="privacyshield">
+                <img src="materials/privacy.png" alt="Small Image">
+                
+            </div>
+            <div class="privacytext">
+                <a href="https://myaccount.google.com/privacycheckup?utm_medium=in-product-promo&utm_source=marketing-growth-hpp&utm_campaign=july2021&pli=1">Stay in control with Privacy Checkup</a>
+            </div>
+        </div>
+    </body>
+</html>
